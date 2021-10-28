@@ -36,7 +36,6 @@ body {
 .user__name {
   font-family: "Pacifico", cursive;
   color: var(--secondary-color) !important;
-  text-decoration: none;
 }
 #home,
 #skills,
@@ -57,28 +56,6 @@ nav {
   padding: 5px;
   font-size: 1.5rem;
   margin-left: 0.8rem;
-}
-
-.user__name::before {
-  content: "";
-  height: 2.5rem;
-  width: 2.5rem;
-  position: absolute;
-  border-top: 3px solid var(--secondary-color);
-  border-left: 3px solid var(--secondary-color);
-  top: 0;
-  left: 0;
-}
-
-.user__name::after {
-  content: "";
-  height: 2.5rem;
-  width: 2.5rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 3px solid var(--secondary-color);
-  border-right: 3px solid var(--secondary-color);
 }
 
 .nav-link {
@@ -106,7 +83,6 @@ nav {
 }
 
 #toggle-ld:hover {
-  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .dark #toggle-ld {
@@ -253,26 +229,13 @@ nav {
     font-size: 20px;
   }
 }
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(126, 239, 104, 0.8);
+#toggle-ld {
+  border-color: var(--secondary-color);
+}
+.btn:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
-    0 0 8px rgba(126, 239, 104, 0.6);
+    0 0 8px var(--secondary-color);
+  border-color: var(--secondary-color);
   outline: 0 none;
 }
 .form-control:focus {

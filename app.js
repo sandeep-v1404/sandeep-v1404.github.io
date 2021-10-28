@@ -17,11 +17,11 @@ button.addEventListener("click", function () {
     i++;
     body.classList.toggle("dark");
     nav.classList.toggle("dark");
+    nav.classList.toggle("navbar-dark");
 
     button.setAttribute("title", toastTitle[i]);
     toggle.classList.remove(icons[0]);
     toggle.classList.add(icons[i]);
-    // projectsText.style.color = textColor[i];
     if (i === color.length - 1) {
         i = -1;
     }
