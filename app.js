@@ -15,7 +15,9 @@ let i = 0;
 
 button.addEventListener("click", function () {
     i++;
-    body.style.background = color[i];
+    body.classList.toggle("dark");
+    nav.classList.toggle("dark");
+
     button.setAttribute("title", toastTitle[i]);
     toggle.classList.remove(icons[0]);
     toggle.classList.add(icons[i]);
@@ -24,3 +26,8 @@ button.addEventListener("click", function () {
         i = -1;
     }
 });
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+

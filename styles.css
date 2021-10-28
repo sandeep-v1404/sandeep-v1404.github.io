@@ -1,15 +1,19 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --primary-color: black;
   --background-color: white;
-  --secondary-color: orange;
+  --secondary-color: #88e0ef;
 }
 
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+.dark {
+  background-color: black;
 }
 
 html {
@@ -26,7 +30,14 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.dark nav a {
+  color: white !important;
+}
+.user__name {
+  font-family: "Pacifico", cursive;
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+}
 #home,
 #skills,
 #projects {
@@ -40,7 +51,7 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
-.navbar-brand {
+.user__name {
   position: relative;
   font-weight: 700;
   padding: 5px;
@@ -48,11 +59,7 @@ nav {
   margin-left: 0.8rem;
 }
 
-.navbar-brand:hover {
-  color: var(--secondary-color) !important;
-}
-
-.navbar-brand::before {
+.user__name::before {
   content: "";
   height: 2.5rem;
   width: 2.5rem;
@@ -63,7 +70,7 @@ nav {
   left: 0;
 }
 
-.navbar-brand::after {
+.user__name::after {
   content: "";
   height: 2.5rem;
   width: 2.5rem;
@@ -101,6 +108,10 @@ nav {
 #toggle-ld:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+.dark #toggle-ld {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .profile__pic img {
@@ -179,9 +190,18 @@ nav {
 .card__content {
   height: 200px;
   padding: 1rem;
-  background: #eeeeee;
+  background: #111;
 }
 
+.card__content h3 {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px #585b5b;
+}
+
+.dark .card__content a {
+  color: var(--background-color);
+}
 .card__content a {
   color: var(--primary-color);
 }
@@ -232,4 +252,32 @@ nav {
   #about h1 {
     font-size: 2rem;
   }
+  .card__content h3 {
+    font-size: 20px;
+  }
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+.form-control:focus {
+  box-shadow: none;
 }
