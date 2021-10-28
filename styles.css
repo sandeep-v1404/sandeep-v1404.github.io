@@ -199,11 +199,8 @@ nav {
   text-shadow: 5px 5px 10px #585b5b;
 }
 
-.dark .card__content a {
-  color: var(--background-color);
-}
 .card__content a {
-  color: var(--primary-color);
+  color: var(--background-color);
 }
 
 #about {
