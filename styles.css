@@ -103,6 +103,18 @@ nav {
   color: var(--secondary-color);
   line-height: 60px;
 }
+.profile__description .tagline {
+  color: black;
+  font-size: large;
+}
+.dark .profile__description .tagline {
+  color: white;
+}
+.dark .profile__description p,
+.dark #projects p {
+  font-weight: normal;
+  color: #b0b4b4;
+}
 
 .profile__description p,
 #projects p {
@@ -115,15 +127,21 @@ nav {
   color: var(--primary-color);
 }
 
-.btn-orange {
+.btn-custom {
   background-color: var(--secondary-color);
 }
 
-.btn-orange:hover {
+.btn-custom:hover {
   background-color: var(--primary-color);
 }
+.dark .btn-custom:hover {
+  background-color: white;
+}
+.dark .btn-custom:hover a {
+  color: #111;
+}
 
-.btn-orange a,
+.btn-custom a,
 .btn-dark a {
   color: var(--background-color);
   text-decoration: none;
@@ -143,6 +161,7 @@ nav {
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  border: 1px solid white;
 }
 
 .card__project .card__image {
@@ -170,6 +189,11 @@ nav {
 }
 
 .card__content h3 {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px #585b5b;
+}
+.card__content p {
   color: var(--secondary-color);
   font-weight: bolder;
   text-shadow: 5px 5px 10px #585b5b;
@@ -217,6 +241,9 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  #home {
+    margin-top: 11rem;
+  }
   .profile__pic img {
     width: 100%;
   }

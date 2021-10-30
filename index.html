@@ -24,12 +24,18 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <!-- <link rel="icon" href="" /> -->
-    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" href="/favicon32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/android-chrome-192x192.png"
+      sizes="192x192"
+    />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
     <link rel="manifest" href="/manifest.json" />
   </head>
@@ -91,7 +97,6 @@
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center"
         id="home"
         class="row align-items-center"
       >
@@ -101,7 +106,7 @@
             offset-lg-1
             col-lg-5 col-md-5 col-sm-12
             profile__pic
-            text-center
+            text-md-center
           "
         >
           <img src="./Sandeep.png" alt="logo" />
@@ -112,16 +117,19 @@
             mt-sm-4
             profile__description
             justify-content-center
-            text-lg-left text-center
+            text-lg-left
           "
         >
-          <h1 class="font-weight-bold">Hello,I am Sandeep</h1>
-          <p>A Full Stack Web Developer | Linux User</p>
+          <h1 class="font-weight-bold">Hello,I'm Sandeep</h1>
+          <p class="tagline">A Full Stack Web Developer | Linux User</p>
           <p>
-            🎓 I am a junior year student pursuing B.E. C.S.E. at Sathyabama
-            IST, Chennai. <br />
+            🎓 I am a junior year student pursuing Bachelor in Computer Science
+            and Engineering at Sathyabama Institute of Science and Technology,
+            Chennai. <br />
+            <br />
             ⭐️ I'm a Software Developer with experience in Web Development
             using MERN Stack. <br />
+            <br />
             ⭐️ Also I'm an Open Source Enthusiast and I like exploring
             different Technologies for building Applications.
           </p>
@@ -131,7 +139,7 @@
               >Contact me</a
             >
           </button>
-          <button type="button" class="btn btn-orange">
+          <button type="button" class="btn btn-custom">
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1awFVQ3rToAMZatPDxmXOTYRK8KBcckRf/view?usp=sharing"
@@ -169,11 +177,22 @@
                 A Full Stack Web App for digitalizing Patient Details in
                 Hospital
               </p>
-              <a
-                href="https://github.com/sandeep-v1404/sathyabama-dental"
-                target="_blank"
-                >GitHub Repo</a
-              >
+              <div class="row justify-content-between align-items-center">
+                <div class="offset-1 col-5">
+                  <a
+                    href="https://github.com/sandeep-v1404/sathyabama-dental"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </div>
+                <div class="col-5">
+                  <a
+                    href="https://github.com/sandeep-v1404/sathyabama-dental"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
