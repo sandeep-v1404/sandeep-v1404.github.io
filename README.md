@@ -2,6 +2,9 @@
 
 # 🌟 My Portfolio
 
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 This is my personal portfolio website built using **React + Vite + Tailwind CSS**.
 It showcases my projects, skills, and contact information in a modern and responsive design.
 

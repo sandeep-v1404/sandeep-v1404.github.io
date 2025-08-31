@@ -6,6 +6,8 @@ import { Content } from "../data/types";
 const Footer = () => {
   const footerData = useSection("footer") as Content["footer"];
   const contactData = useSection("contact") as Content["contact"];
+  const headerData = useSection("header") as Content["header"];
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
@@ -16,7 +18,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href={headerData.socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
@@ -24,7 +26,7 @@ const Footer = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href={headerData.socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"
@@ -39,10 +41,22 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 space-y-2">
           <p>
             &copy; {new Date().getFullYear()} {footerData.name}. All rights
             reserved.
+          </p>
+          <p>
+            🚀 Open source project –{" "}
+            <a
+              href={headerData.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Feel free to contribute
+            </a>{" "}
+            or make your own portfolio!
           </p>
         </div>
       </div>

@@ -40,6 +40,7 @@ export interface Header {
   logo: string;
   menuItems: MenuItem[];
   socialLinks: SocialLinks;
+  projectLink: string;
 }
 
 export interface MenuItem {
