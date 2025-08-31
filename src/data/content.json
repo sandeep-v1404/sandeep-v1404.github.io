@@ -1,0 +1,83 @@
+{
+  "header": {
+    "logo": "Sandeep",
+    "menuItems": [
+      { "title": "Home", "href": "#home" },
+      { "title": "About", "href": "#about" },
+      { "title": "Projects", "href": "#projects" },
+      { "title": "Contact", "href": "#contact" }
+    ],
+    "socialLinks": {
+      "github": "https://github.com/sandeep-v1404",
+      "linkedin": "https://www.linkedin.com/in/sandeep1404/",
+      "email": "valpasanisandeep@gmail.com"
+    }
+  },
+  "hero": {
+    "name": "Sandeep",
+    "title": "Full Stack | React Native & React Developer",
+    "description": "I build scalable, high-performance web and mobile applications using modern technologies like React, React Native, Node.js, TypeScript, and Tailwind. I focus on creating clean, reusable, and well-tested solutions.",
+    "image": "https://avatars.githubusercontent.com/u/57038543?v=4"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate full-stack developer with expertise in React, React Native, and backend technologies. My experience includes building reusable component libraries, integrating themes, optimizing performance, converting Angular projects to React, and creating scalable APIs. I enjoy solving problems with clean architecture and thoughtful design.",
+    "skills": [
+      {
+        "title": "Frontend & Mobile",
+        "description": "React, React Native, TypeScript, Tailwind, ShadCN UI, custom component libraries",
+        "icon": "Smartphone"
+      },
+      {
+        "title": "Backend & APIs",
+        "description": "Node.js, Nest.js, Express, GraphQL, REST APIs, PostgreSQL, MongoDB",
+        "icon": "Server"
+      },
+      {
+        "title": "Tools & Optimization",
+        "description": "CI/CD, Docker, Jest, Supertest, performance tuning, utility libraries",
+        "icon": "Settings"
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Some of my highlighted work that showcases web, mobile, and full-stack solutions.",
+    "items": [
+      {
+        "title": "Wellness App",
+        "description": "A React Native app with wake-up puzzles, activity tracking, task management, and progress analytics. Includes custom utilities and Tailwind theme support.",
+        "image": "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80",
+        "github": "https://github.com",
+        "demo": "https://demo.com"
+      },
+      {
+        "title": "Custom Component Library",
+        "description": "Reusable React Native component library with theme and token support, integrated with Tailwind and TypeScript.",
+        "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1476&q=80",
+        "github": "https://github.com",
+        "demo": "https://demo.com"
+      },
+      {
+        "title": "Job Info Clipboard Web App",
+        "description": "A React-based web application for managing and copying job details quickly. Built with Vite, TypeScript, and modern UI components.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80",
+        "github": "https://github.com",
+        "demo": "https://demo.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Interested in collaborating or hiring? Let's discuss how I can help bring your ideas to life.",
+    "info": {
+      "email": "valpasanisandeep@gmail.com",
+      "phone": "+91 70133 44159",
+      "location": "India (Remote Worldwide)"
+    }
+  },
+  "footer": {
+    "name": "Sandeep V",
+    "title": "Full Stack | React Native & React Developer"
+  }
+}
