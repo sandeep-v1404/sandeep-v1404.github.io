@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
 import { useSection } from "../hooks/useContent";
 import { Content } from "../data/types";
 import emailjs from "emailjs-com";
@@ -8,19 +8,20 @@ import emailjs from "emailjs-com";
 const Contact = () => {
   const contactData = useSection("contact") as Content["contact"];
   const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
 
-    console.log("first", formRef.current);
+    setLoading(true);
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID as string, // Vite
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string, // Vite
+        import.meta.env.VITE_EMAILJS_SERVICE_ID as string,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string // Vite
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string
       )
       .then(
         () => {
@@ -31,7 +32,8 @@ const Contact = () => {
           alert("❌ Something went wrong. Try again later.");
           console.error(error.text);
         }
-      );
+      )
+      .finally(() => setLoading(false)); // stop loader
   };
 
   return (
@@ -141,11 +143,23 @@ const Contact = () => {
             </div>
             <motion.button
               type="submit"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              disabled={loading} // disable while loading
+              whileHover={{ scale: loading ? 1 : 1.05 }}
+              whileTap={{ scale: loading ? 1 : 0.95 }}
+              className={`w-full px-6 py-3 flex items-center justify-center gap-2 rounded-lg text-white transition-colors ${
+                loading
+                  ? "bg-blue-400 cursor-not-allowed"
+                  : "bg-blue-600 hover:bg-blue-700"
+              }`}
             >
-              Send Message
+              {loading ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  Sending...
+                </>
+              ) : (
+                "Send Message"
+              )}
             </motion.button>
           </motion.form>
         </div>

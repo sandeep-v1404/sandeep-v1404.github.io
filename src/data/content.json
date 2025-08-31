@@ -21,7 +21,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a passionate full-stack developer with expertise in React, React Native, and backend technologies. My experience includes building reusable component libraries, integrating themes, optimizing performance, converting Angular projects to React, and creating scalable APIs. I enjoy solving problems with clean architecture and thoughtful design.",
+    "description": "I'm a passionate full-stack developer with expertise in React, React Native, and backend technologies. My experience includes building reusable component libraries, integrating themes, optimizing performance, and creating scalable APIs. I enjoy solving problems with clean architecture and thoughtful design.",
     "skills": [
       {
         "title": "Frontend & Mobile",
@@ -45,25 +45,32 @@
     "description": "Some of my highlighted work that showcases web, mobile, and full-stack solutions.",
     "items": [
       {
-        "title": "Wellness App",
-        "description": "A React Native app with wake-up puzzles, activity tracking, task management, and progress analytics. Includes custom utilities and Tailwind theme support.",
-        "image": "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80",
-        "github": "https://github.com",
-        "demo": "https://demo.com"
+        "title": "MindfulDesk (Chrome Extension)",
+        "description": "A React + TypeScript Chrome Extension (Manifest V3) for productivity and wellness. Features include focus timer, hydration & mood tracking, breathing exercises, and posture reminders. Built with scalable components and TailwindCSS.",
+        "image": "https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1480&q=80",
+        "github": "https://github.com/sandeep-v1404/wellness-extension-public/",
+        "demo": "https://github.com/sandeep-v1404/wellness-extension-public?tab=readme-ov-file#demo"
       },
       {
-        "title": "Custom Component Library",
-        "description": "Reusable React Native component library with theme and token support, integrated with Tailwind and TypeScript.",
+        "title": "ClippyGo",
+        "description": "A React + TypeScript app to manage and reuse job application details. Includes copy-to-clipboard for all fields, inline editing, field renaming, delete support, drag-and-drop reordering, and JSON import/export.",
         "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1476&q=80",
-        "github": "https://github.com",
-        "demo": "https://demo.com"
+        "github": "https://github.com/sandeep-v1404/clippygo",
+        "demo": "https://famous-taiyaki-4e31f2.netlify.app/"
       },
       {
-        "title": "Job Info Clipboard Web App",
-        "description": "A React-based web application for managing and copying job details quickly. Built with Vite, TypeScript, and modern UI components.",
+        "title": "Sathyabama Dental: Digitalization",
+        "description": "Full-stack hospital management system for dental departments using ReactJS, Nest.js, PostgreSQL, and TypeScript. Designed architecture, built UI forms, engineered Node.js APIs, implemented staff/admin roles, and deployed with Heroku CI/CD.",
         "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80",
-        "github": "https://github.com",
-        "demo": "https://demo.com"
+        "github": "https://github.com/sandeep-v1404/sathyabama-dental",
+        "demo": "https://sathyabama-dental.onrender.com/"
+      },
+      {
+        "title": "eCommerce Application",
+        "description": "A full-stack Angular + Firebase eCommerce app with RazorPay integration. Features product management, orders, payments, and admin dashboard for CRUD operations. Uses Firestore DB, Firebase Cloud Functions, and Angular Material UI.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80",
+        "github": "https://github.com/sandeep-v1404/angular-ecommerce",
+        "demo": "https://angular-ecommerce-demo.netlify.app/"
       }
     ]
   },
